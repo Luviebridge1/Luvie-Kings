@@ -1,0 +1,123 @@
+/* General */
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fdd835;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* Card Layouts */
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  flex: 1 1 250px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.card-content p {
+  color: #555;
+}
+
+.card-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.card-content a:hover {
+  background: #fdd835;
+  color: #222;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-cards {
+    flex-direction: column;
+  }
+  }
